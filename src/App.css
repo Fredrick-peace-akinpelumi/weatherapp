@@ -1,0 +1,63 @@
+.first{
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-name: weather;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  height: 100vh;
+}
+@keyframes weather {
+  100%{
+    background-image: url(cloud1.jpg);
+  }
+  75%{
+    background-image: url(cloud2.jpg);
+  }
+  50%{
+    background-image: url(cloud3.jpg)
+  }
+  25%{
+    background-image: url(cloud4.jpg)
+  }
+  0%{
+    background-image: url(cloud5.jpg)
+
+  }
+}
+.location{
+  font-size: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+ background-color: rgb(51, 49, 49);
+ padding: 30px;
+ border-radius: 20px;
+ opacity: 0.5;
+}
+.flex p{
+  color: white;
+  font-weight: 500;
+  font-family: cursive;
+  margin-left: 20px;
+}
+.flex h1{
+  color: white;
+  font-weight: 500;
+  font-family: cursive;
+  margin-left: 20px;
+}
+@media (max-width:720px) {
+  .flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+   background-color: rgb(51, 49, 49);
+   padding: 30px;
+   border-radius: 20px;
+   opacity: 0.5;
+  }
+}
